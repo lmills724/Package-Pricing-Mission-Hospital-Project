@@ -25,3 +25,14 @@ This model aims to optimize pricing strategies for healthcare providers, provide
 - **Urea:** normal - 7 to 20 mg/dl any value outside these limits will be "abrnormal"
 - **Creatinine Categories:** Age <3 & creatinine: 0.3-0.7 -> Normal, Age: 3-18 & creatinine: 0.5-1.0 -> Normal, Age >18 & Female & creatinine: 0.6 - 1.1 ->	Normal,
 Age > 18 & Male & creatinine: 0.9 - 1.3 ->	Normal, Else: Abnormal
+
+### Removing Variables
+- **Stay at hospital ICU** and **Stay in Ward** were removed because they are reflective construct variables. Additionally, it is not possible to predict length of stay accurately at time of admission.
+
+### Transforming Dependent Variable
+The **Total Cost To Hospital** variable has a right-skew, so we consider the natural log to normalize the distribution. See graphs below:
+
+
+### Null Values
+- BP Range imputed 'Normal' BP Range for null values.
+- Urea imputed 'Normal' Urea Level for null values.
