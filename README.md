@@ -14,7 +14,7 @@ Develop a predictive model that accurately forecasts the cost of medical treatme
 This model aims to optimize pricing strategies for healthcare providers, improve financial transparency for patients, and overall improve efficiency of the healthcare system through data-driven decisions.
 
 ### What is package pricing?
-**Package Pricing:** offers patients a bundled quote for an episode of care.
+**Package Pricing** offers patients a bundled quote for an episode of care.
 
 --- 
 
@@ -82,3 +82,20 @@ This model aims to optimize pricing strategies for healthcare providers, improve
 
 ### Learning Curve Analysis
 ![Learning Curve Plots of LR, Lasso, and RF Models](./images/Learning%20Curve%20Comparison.png)
+
+---
+
+## Conclusion
+Based on this analysis and modeling of treatment cost data at Mission Hospital, there are important considerations regarding implementing package pricing.
+
+### **Should Mission Hospital Implement Package Pricing?**
+**Pros:**
+- **Improved Cost Transparency:** Provides patients with upfront cost estimates, improving trust and satisfaction.
+- **Operational Efficiency:** Simplifies billing by bundling related services.
+- **Data-Driven Approach:** Models can inform pricing decisions using clinical and demographic data at time of admission.
+**Cons:**
+- **Prediction Limitations:** Current models explain only part of cost variability, risking inaccurate estimates.
+- **Not Universally Applicable:** Package pricing may not be sucessful for rare or highly variable treatments.
+
+### **Recommendation**
+Mission Hospital should consider a **targeted rollout of package pricing** for standardized, lower-variability procedures. Over time, continued data collection and model refinement will be crucial for minimizing risk and improving cost predictions.
