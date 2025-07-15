@@ -36,6 +36,8 @@ This model aims to optimize pricing strategies for healthcare providers, improve
 |**Hemoglobin** | Normal/Abnormal (Female: 12-15.5, Male: 13-17.5) |
 | **Urea** | Normal/Abnormal (Normal: 7-20 mg/dL) |
 |**Creatinine Categories:** | Age <3 & creatinine: 0.3-0.7 -> Normal, Age: 3-18 & creatinine: 0.5-1.0 -> Normal, Age >18 & Female & creatinine: 0.6 - 1.1 ->	Normal, Age > 18 & Male & creatinine: 0.9 - 1.3 ->	Normal, Else: Abnormal |
+
+
 ![Categorical Variable Distribution Plots](./images/Categorical%20Variable%20Distributions.png)
 ---
 
