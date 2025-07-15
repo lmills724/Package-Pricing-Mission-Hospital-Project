@@ -35,9 +35,8 @@ This model aims to optimize pricing strategies for healthcare providers, improve
 | **BMI** | Underweight, Normal, Overweight, Obese |
 |**Hemoglobin** | Normal/Abnormal (Female: 12-15.5, Male: 13-17.5) |
 | **Urea** | Normal/Abnormal (Normal: 7-20 mg/dL) |
-|**Creatinine Categories:** Age <3 & creatinine: 0.3-0.7 -> Normal, Age: 3-18 & creatinine: 0.5-1.0 -> Normal, Age >18 & Female & creatinine: 0.6 - 1.1 ->	Normal,
-Age > 18 & Male & creatinine: 0.9 - 1.3 ->	Normal, Else: Abnormal |
-
+|**Creatinine Categories:** | Age <3 & creatinine: 0.3-0.7 -> Normal, Age: 3-18 & creatinine: 0.5-1.0 -> Normal, Age >18 & Female & creatinine: 0.6 - 1.1 ->	Normal, Age > 18 & Male & creatinine: 0.9 - 1.3 ->	Normal, Else: Abnormal |
+![Categorical Variable Distribution Plots](./images/Categorical%20Variable%20Distributions.png)
 ---
 
 ### Feature Engineering & Cleaning
@@ -46,6 +45,7 @@ Age > 18 & Male & creatinine: 0.9 - 1.3 ->	Normal, Else: Abnormal |
 
 - **Target Variable Transformation:**
     - The **Total Cost To Hospital** was **log-transformed** to address right skewness in the distribution.
+![Target Variable Distribution Before/After Log Transformation](./images/Total%20Cost%20Log%20Plots.png)
 
 - **Handling Null Values:**
     - **BP Range:** Missing values imputed as 'Normal'
@@ -72,14 +72,11 @@ Age > 18 & Male & creatinine: 0.9 - 1.3 ->	Normal, Else: Abnormal |
    - R²: **0.1785**
    - Feature importance identified non-linear interactions but model performance was slightly worse.
 
+### Model Performance and Residual Analysis Plots
+![Actual vs Predicted and Residual Plots - LR Model](./images/avp%20residuals%20LR.png)
+![Actual vs Predicted and Residual Plots - Lasso Model](./images/avp%20residuals%20LASSO.png)
+![Actual vs Predicted and Residual Plots - RF Model](./images/avp%20residuals%20RF.png)
 ---
 
-## Residual Analysis
-
-- **Residuals vs Predicted Plot**  
-  Checked for patterns; slight right skew detected.
-
-- **Histogram of Residuals**  
-  Slight right-skewness observed; potential for further normalization or different loss functions.
-
----
+### Learning Curve Analysis
+![Learning Curve Plots of LR, Lasso, and RF Models](./images/Learning%20Curve%20Comparison.png)
