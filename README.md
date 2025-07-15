@@ -93,6 +93,7 @@ Based on this analysis and modeling of treatment cost data at Mission Hospital, 
 - **Improved Cost Transparency:** Provides patients with upfront cost estimates, improving trust and satisfaction.
 - **Operational Efficiency:** Simplifies billing by bundling related services.
 - **Data-Driven Approach:** Models can inform pricing decisions using clinical and demographic data at time of admission.
+
 **Cons:**
 - **Prediction Limitations:** Current models explain only part of cost variability, risking inaccurate estimates.
 - **Not Universally Applicable:** Package pricing may not be sucessful for rare or highly variable treatments.
